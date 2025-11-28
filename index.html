@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>사서쌤이 구입하려고 조용히 담아둔 장바구니</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Pretendard', system-ui, sans-serif;
+      background: linear-gradient(180deg, #f6efe6, #efe3d2);
+      color: #3b2a1a;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'NanumSquareRound', 'Pretendard', system-ui, sans-serif;
+      font-size: 46px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 15px;
+      color: #6b5540;
+    }
+
+    .cart-wrap {
+      max-width: 1280px;
+      margin: 0 auto 100px;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    /* 장바구니 외곽 프레임 */
+    .cart-frame {
+      position: relative;
+      background: radial-gradient(circle at top, #f9efd9, #e7d3b5);
+      border-radius: 36px;
+      padding: 80px 60px 70px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.18);
+      border: 6px solid #b38a5a;
+    }
+
+    /* 장바구니 손잡이 */
+    .cart-handle {
+      position: absolute;
+      top: -50px;
+      left: 80px;
+      width: 240px;
+      height: 100px;
+      border: 10px solid #b38a5a;
+      border-bottom: none;
+      border-radius: 140px 140px 0 0;
+      background: transparent;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+
+    .bag {
+      background: linear-gradient(180deg, #fff6ec, #f1e0cc);
+      border-radius: 26px;
+      padding: 24px 22px 22px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      border: 2px solid #d6b790;
+      position: relative;
+    }
+
+    .bag h2 {
+      font-size: 20px;
+      margin: 0 0 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bag ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bag li a {
+      display: block;
+      background: #ffffff;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #3b2a1a;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: all 0.2s ease;
+    }
+
+    .bag li a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+      background: #fff9ef;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px 80px;
+      font-size: 13px;
+      color: #7a624a;
+    }
+  .title-image {
+  display: block;
+  max-width: 100%;
+  width: 840px;
+  margin: 0 auto 12px;
+}
+
+@media (max-width: 768px) {
+  .title-image {
+    width: 92%;
+  }
+}
+</style>
+  <link href="https://fonts.googleapis.com/css2?family=Cafe24+Ssurround&display=swap" rel="stylesheet">
+  <style>
+  
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hiun/NanumSquareRound@1.0/nanumsquareround.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="title.png" alt="사서쌤이 구입하려고 조용히 담아둔 장바구니" class="title-image">
+    <p>업무에 바로 쓰이는 물품들만 천천히 골라 담았습니다.</p>
+  </header>
+
+  <section class="cart-wrap">
+    <div class="cart-handle"></div>
+    <div class="cart-frame">
+
+      <div class="grid">
+
+        <div class="bag">
+          <h2>🧲 자석</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/NyAYtzrX0" target="_blank">강력 자석 집게 서류 클립</a></li>
+            <li><a href="https://link.gmarket.co.kr/lhAYtzrX0" target="_blank">네오디움 메모자석</a></li>
+            <li><a href="https://link.gmarket.co.kr/hkAYtzrX0" target="_blank">자석 메모홀더(대)</a></li>
+            <li><a href="https://link.gmarket.co.kr/a1AYtzrX0" target="_blank">자석 조각고무</a></li>
+            <li><a href="https://link.gmarket.co.kr/q1AYtzrX0" target="_blank">자석 바구니(대형)</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>🗃️ 수납 · 정리</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/l2AYtzrX0" target="_blank">다용도 바구니</a></li>
+            <li><a href="https://link.gmarket.co.kr/nuAYtzrX0" target="_blank">휴대폰 수거함</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>🗂️ 운영 · 실무 공간</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/NlAYtzrX0" target="_blank">재실표찰</a></li>
+            <li><a href="https://link.gmarket.co.kr/V2AYtzrX0" target="_blank">가림막 커튼</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>🖼️ 전시 · 연출</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/MIBYtzrX0" target="_blank">탁상용 철재 거치대</a></li>
+            <li><a href="https://link.gmarket.co.kr/T3AYtzrX0" target="_blank">철제 타공형 파티션</a></li>
+            <li><a href="https://link.gmarket.co.kr/vxHiDSn05" target="_blank">나무 이젤</a></li>
+            <li><a href="https://link.gmarket.co.kr/dWAYtzrX0" target="_blank">행사 테이블보</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>🏷️ 라벨 · 관리</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/m3AYtzrX0" target="_blank">라벨프린터 LW-K200BL</a></li>
+            <li><a href="https://link.gmarket.co.kr/JqKiDSn05" target="_blank">Niimbot B21</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>🎈 이벤트 아이템</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/J4AYtzrX0" target="_blank">토킹버튼</a></li>
+            <li><a href="https://link.gmarket.co.kr/rUIiDSn05" target="_blank">캡슐 뽑기기계</a></li>
+            <li><a href="https://link.gmarket.co.kr/7IBYtzrX0" target="_blank">약포지 투명봉투</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>✏️ 문구 · 소모품</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/TeHiDSn05" target="_blank">연필깎이</a></li>
+            <li><a href="https://link.gmarket.co.kr/UoHiDSn05" target="_blank">독서 네임 지우개</a></li>
+          </ul>
+        </div>
+
+        <div class="bag">
+          <h2>🖥️ 데스크</h2>
+          <ul>
+            <li><a href="https://link.gmarket.co.kr/WfKiDSn05" target="_blank">가죽 데스크매트</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    사서쌤 실무 기준으로 정리된 참고용 장바구니입니다.
+  </footer>
+
+</body>
+</html>
